@@ -1,0 +1,32 @@
+{
+    "name": "examples",
+    "version": "1.0.0",
+    "description": "Example of how to use Mocha with Nightmare.",
+    "main": "example.js",
+    "dependencies": {
+      "body-parser": "^1.18.3",
+      "express": "^4.16.3",
+      "heroku": "^7.0.84",
+      "mysql2": "^1.5.3",
+      "sequelize": "^4.37.10"
+    },
+    "scripts": {
+      "test": "mocha"
+    },
+    "author": "Peleke Sengstacke",
+    "license": "ISC",
+    "devDependencies": {
+      "chai": "^3.5.0",
+      "mocha": "^2.5.3",
+      "nightmare": "^2.5.3"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/The-Dude-Abides/Remote-Driver.git"
+    },
+    "keywords": [],
+    "bugs": {
+      "url": "https://github.com/The-Dude-Abides/Remote-Driver/issues"
+    },
+    "homepage": "https://github.com/The-Dude-Abides/Remote-Driver#readme"
+  }

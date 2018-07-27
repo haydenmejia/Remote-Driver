@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Remote Driver</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href='css/remoteDriver.css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+    <script src="js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,400,600,700">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js" type="text/javascript"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+</head>
+
+<nav class="navbar navbar-inverse navbar-dark">
+    <div class="navbar-header">
+
+        <a href="#" class="target-route">REMOTE DRIVER</a>
+        <a href="#commandpanel" class="target-route">Command Panel</a>
+        <a href="#activitylog" class="target-route">Activity Log</a>
+        <a href="#datapanel" class="target-route">Data Panel</a>
+        <a href="#canvas" class="target-route">Simulation</a>
+
+    </div>
+</nav>
+
+<br>
+
+<!-- <div class="jumbotron-narrow"> -->
+<!-- <div class="pagebreak"></div> -->
+
+<!-- FORWARD BUTTON -->
+<div class="container" id="btn-container">
+    <div class="row">
+        <button id="up-button" type="button" class="button arrow-btn" data-direction="up" data-degrees="180" name="up button">
+            <span class="glyphicon glyphicon-arrow-up"></span>
+        </button>
+    </div>
+
+<!-- LEFT, STOP, RIGHT BUTTONS -->
+    <div class="row">
+        <button id="left-button" type="button" class="button arrow-btn" data-direction="left" data-degrees="-90" name="left button">
+            <span class="glyphicon glyphicon-arrow-left"></span>
+        </button>
+
+        <button id="stop-button" type="button" class="button arrow-btn" data-direction="" data-degrees="0" name="stop button">
+            <span class="glyphicon glyphicon-stop"></span>
+        </button>
+
+        <button id="right-button" type="button" class="button arrow-btn" data-direction="right" data-degrees="90" name="right button">
+            <span class="glyphicon glyphicon-arrow-right"></span>
+        </button>
+    </div>
+
+    <!-- BACKWARD BUTTON -->
+    <div class="row">
+            <a name="commandpanel"></a>
+        <button id="down-button" type="button" class="button arrow-btn" data-direction="down" data-degrees="-180" name="down button">
+            <span class="glyphicon glyphicon-arrow-down"></span>
+        </button>
+    </div>
+
+    <h2>Command Panel</h2>
+</div>
+<!-- END COMMAND PANEL -->
+
+
+<div class="row" id="data-panel">
+        <a name="datapanel"></a>
+
+    <div class="col-lg-4">
+        <div class="rounded-circle" id="compass"></div>
+        <a name="compass"></a>
+    </div>
+
+
+    <div class="col-lg-4" id="command-log">
+        <a name="activitylog"></a>
+
+            <br>
+        </div>
+    </div>
+
+    <div class="col-lg-4">
+        <div class="panel-default" id="simulation"></div>
+        <a name="canvas"></a>
+
+        <div class="box" id="game">
+            <div id="car"></div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</HTML>
+<!-- wtf -->
